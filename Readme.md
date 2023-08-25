@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Рева](https://up.htmlacademy.ru/htmlcss-individual/1/user/1411729).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Картавый](https://up.htmlacademy.ru/htmlcss-individual/1/user/942149).
 
 ---
 

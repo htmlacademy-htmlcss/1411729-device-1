@@ -18,7 +18,12 @@
           <li class="navigation-user-item">
 
             <form class="product-search" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="product-search-name" type="text" name="productName" value="Поиск по сайту">
+
+              <label>
+                <span class="visually-hidden">Найти товар в каталоге</span>
+                <input class="product-search-name" type="text" name="product-name" value="Поиск по сайту">
+              </label>
+
               <button class="product-search-btn" type="submit">Найти</button>
             </form>
 
@@ -105,7 +110,10 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
 
-            <input class="catalog-filter-price" type="range" name="price" min="0" max="9000" step="50" value="5000">
+            <label class="catalog-filter">
+              <span class="visually-hidden">Настройте диапазон</span>
+              <input class="catalog-filter-price" type="range" name="price" min="0" max="9000" step="50" value="5000">
+            </label>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
@@ -155,17 +163,17 @@
 
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <lable class="catalog-filter-name">
+                <label class="catalog-filter-name">
                   <input class="catalog-filter-control" type="radio" name="bluetooth" value="yes" checked>
                   Есть
-                </lable>
+                </label>
               </li>
 
               <li class="catalog-filter-item">
-                <lable class="catalog-filter-name">
+                <label class="catalog-filter-name">
                   <input class="catalog-filter-control" type="radio" name="bluetooth" value="no">
                   Нет
-                </lable>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -187,17 +195,17 @@
 
         <ul class="sort-order-list">
           <li class="sort-order-item">
-            <lable class="sort-order-name">
+            <label class="sort-order-name">
               <input class="sort-order-control" type="radio" name="order" value="ascending" checked>
               &#9650;
-            </lable>
+            </label>
           </li>
 
           <li class="sort-order-item">
-            <lable class="sort-order-name">
+            <label class="sort-order-name">
               <input class="sort-order-control" type="radio" name="order" value="descending">
               &#9660;
-            </lable>
+            </label>
           </li>
         </ul>
 

@@ -18,7 +18,12 @@
           <li class="navigation-user-item">
 
             <form class="product-search" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="product-search-name" type="text" name="productName" value="Поиск по сайту">
+
+              <label>
+                <span class="visually-hidden">Найти товар в каталоге</span>
+                <input class="product-search-name" type="text" name="product-name" value="Поиск по сайту">
+              </label>
+
               <button class="product-search-btn" type="submit">Найти</button>
             </form>
 
@@ -189,19 +194,19 @@
 
           <label class="services-name">
 
-            <input class="services-menu-item" type="radio" name="serviceName" checked>
+            <input class="services-menu-item" type="radio" name="service-name" checked>
             ДОСТАВКА
 
           </label>
           <label class="services-name">
 
-            <input class="services-menu-item" type="radio" name="serviceName">
+            <input class="services-menu-item" type="radio" name="service-name">
             ГАРАНТИЯ
 
           </label>
           <label class="services-name">
 
-            <input class="services-menu-item" type="radio" name="serviceName">
+            <input class="services-menu-item" type="radio" name="service-name">
             КРЕДИТ
 
           </label>
@@ -294,7 +299,11 @@
 
         <form class="subscribe-email-send" action="https://echo.htmlacademy.ru/" method="get">
 
-          <input class="subscribe-email" type="email" name="subscribeEMail" value="Ваш e-mail">
+          <label>
+            <span class="visually-hidden">Ваш e-mail</span>
+            <input class="subscribe-email" type="email" name="subscribe-email" value="Ваш e-mail">
+          </label>
+
           <button class="subscribe-btn button button-light" type="submit">
             ПОДПИСАТЬСЯ
           </button>

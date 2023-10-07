@@ -124,12 +124,6 @@ address {
   opacity: 0.5;
 }
 
-/* Footer */
-.page-footer {
-  background-color: #444;
-  color: #FFFFFF;
-}
-
 /*Catalog*/
 .catalog-products {
   background-color: #F0F0F0;
@@ -183,6 +177,36 @@ address {
 .pagination-active {
   color: #000000;
   opacity: 1;
+}
+
+/* Footer */
+.page-footer {
+  background-color: #444;
+  color: #FFFFFF;
+}
+
+.footer-social-link {
+  display: inline-block;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-repeat: no-repeat;
+}
+
+.footer-social-item:nth-child(1) > .footer-social-link {
+  background-image: url("../images/icons/logo-telegram.svg");
+}
+
+.footer-social-item:nth-child(2) > .footer-social-link {
+  background-image: url("../images/icons/logo-youtube.svg");
+}
+
+.footer-social-item:nth-child(3) > .footer-social-link {
+  background-image: url("../images/icons/logo-twitter.svg");
 }
 
 /* Hidden */

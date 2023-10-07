@@ -144,6 +144,23 @@ address {
   line-height: 24px;
 }
 
+/* Services */
+.services {
+  background-color: #F0F0F0;
+}
+
+.services-description-text::after {
+  content: '';
+
+  display: block;
+  width: 171px;
+  height: 195px;
+
+  background-position: center;
+  background-image: url("../images/service-1.svg");
+  background-repeat: no-repeat;
+}
+
 .banner-delivery {
   background-color: #F0F0F0;
 

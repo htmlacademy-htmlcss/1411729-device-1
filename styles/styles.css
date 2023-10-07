@@ -98,6 +98,43 @@ address {
   font-weight: 400;
 }
 
+/* Categories */
+.categories-link::before {
+  content: '';
+
+  display: block;
+  width: 160px;
+  height: 160px;
+
+  background-color: #FFE17F;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.categories-item:nth-child(1) > .categories-link::before {
+  background-image: url("../images/icons/virtual-reality.svg");
+}
+
+.categories-item:nth-child(2) > .categories-link::before {
+  background-image: url("../images/icons/selfie-monopod.svg");
+}
+
+.categories-item:nth-child(3) > .categories-link::before {
+  background-image: url("../images/icons/action-camera.svg");
+}
+
+.categories-item:nth-child(4) > .categories-link::before {
+  background-image: url("../images/icons/fitness-bracelet.svg");
+}
+
+.categories-item:nth-child(5) > .categories-link::before {
+  background-image: url("../images/icons/smart-watches.svg");
+}
+
+.categories-item:nth-child(6) > .categories-link::before {
+  background-image: url("../images/icons/quadrocopter.svg");
+}
+
 .categories-link {
   font-family: Raleway, sans-serif;
   line-height: 24px;

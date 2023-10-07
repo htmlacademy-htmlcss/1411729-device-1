@@ -57,6 +57,7 @@ address {
 
 .button-font {
   font-family: Raleway, sans-serif;
+  font-size: 18px;
   line-height: normal;
   letter-spacing: 3.6px;
 
@@ -129,11 +130,60 @@ address {
   color: #FFFFFF;
 }
 
-/* font-family: Raleway, sans-serif;
-  line-height: normal;
-  letter-spacing: 3.6px;
+/*Catalog*/
+.catalog-products {
+  background-color: #F0F0F0;
+}
 
-  color: #000000; */
+.small-title {
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.product-card-title {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.product-card-price {
+  color: #444;
+  line-height: normal;
+}
+
+.pagination-show-more {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+
+/* Catalog pagination */
+.pagination {
+  background-color: #EBEBEB;
+}
+
+.pagination-item {
+  color: #444;
+  opacity: 0.3;
+}
+
+.pagination-current {
+  opacity: 0.6;
+}
+
+.pagination-active {
+  color: #000000;
+  opacity: 1;
+}
 
 /* Hidden */
 .visually-hidden {

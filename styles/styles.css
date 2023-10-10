@@ -46,12 +46,21 @@ address {
   font-style: normal;
 }
 
+input,
+select {
+  font-family: Rubik, sans-serif;
+}
+
 .navigation {
   background-color: #FFE17F;
 }
 
 .product-search-row::placeholder {
   opacity: 0.3;
+}
+
+.product-search-btn {
+  font-family: Rubik, sans-serif;
 }
 
 .small-text {

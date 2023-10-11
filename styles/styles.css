@@ -29,30 +29,29 @@ body {
   font-size: 18px;
   line-height: 30px;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
 }
 
-a {
+.link {
   text-decoration: none;
   color: inherit;
 }
 
-a[href^="tel:"] {
+.link[href^="tel:"] {
   text-decoration: underline;
 }
 
-address {
+.contacts-address {
   font-style: normal;
 }
 
-input,
-select {
+.font-rubik {
   font-family: Rubik, sans-serif;
 }
 
 .navigation {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .product-search-row::placeholder {
@@ -84,8 +83,8 @@ select {
 }
 
 .slider-header {
-  background-color: #FFE17F;
-  color: #FFFFFF;
+  background-color: #ffe17f;
+  color: #ffffff;
 }
 
 .slider-header-number {
@@ -119,7 +118,7 @@ select {
   width: 160px;
   height: 160px;
 
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -155,7 +154,7 @@ select {
 
 /* Services */
 .services {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .services-description-text::after {
@@ -171,7 +170,7 @@ select {
 }
 
 .banner-delivery {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 
   font-family: Raleway, sans-serif;
   font-size: 20px;
@@ -194,7 +193,7 @@ select {
 
 /* Subscribe */
 .subscribe {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   color: #444;
 }
 
@@ -207,11 +206,11 @@ select {
 
 /*Catalog*/
 .catalog-products {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .small-title {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: normal;
   letter-spacing: 3.2px;
@@ -243,7 +242,7 @@ select {
 
 /* Catalog pagination */
 .pagination {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .pagination-item {
@@ -263,7 +262,7 @@ select {
 /* Footer */
 .page-footer {
   background-color: #444;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-social-link {

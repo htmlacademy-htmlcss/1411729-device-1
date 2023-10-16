@@ -61,7 +61,19 @@ body {
 }
 
 .navigation {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1160px;
   background-color: #ffe17f;
+}
+
+.navigation li {
+  margin: 0;
+  padding: 0;
 }
 
 .product-search-row::placeholder {
@@ -92,7 +104,17 @@ body {
   letter-spacing: 3.6px;
 }
 
+.slider {
+  display: flex;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
 .slider-header {
+  width: 100%;
+
   background-color: #ffe17f;
   color: #ffffff;
 }
@@ -111,6 +133,14 @@ body {
   color: #000000;
 }
 
+.product-photo {
+  width: 50%;
+}
+
+.product-description {
+  width: 50%;
+}
+
 .product-specs-data {
   font-size: 36px;
 }
@@ -120,7 +150,26 @@ body {
   font-weight: 400;
 }
 
+.slider-pagination {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Categories */
+.categories-navigation {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categories-item {
+  width: 160px;
+}
+
 .categories-link::before {
   content: '';
 
@@ -164,10 +213,34 @@ body {
 
 /* Services */
 .services {
+  display: flex;
+  justify-content: center;
+
   background-color: #f0f0f0;
 }
 
-.services-description-text::after {
+.services-menu {
+  width: 287px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.services-description {
+  position: relative;
+
+  width: 873px;
+}
+
+.services-description-text {
+  width: 452px;
+}
+
+.services-description::after {
+  position: absolute;
+  top: -40px;
+  right: 0;
+
   content: '';
 
   display: block;
@@ -205,6 +278,24 @@ body {
 .subscribe {
   background-color: #f0f0f0;
   color: #444;
+}
+
+.subscribe-block {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-call {
+  display: block;
+  width: 348px;
+}
+
+.subscribe-text {
+  width: 560px;
 }
 
 .subscribe-email {

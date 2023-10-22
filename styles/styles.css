@@ -290,6 +290,18 @@ body {
   font-style: normal;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.info > section {
+  width: 520px;
+}
+
 /* Subscribe */
 .subscribe {
   background-color: #f0f0f0;

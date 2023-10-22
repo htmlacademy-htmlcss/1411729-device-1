@@ -182,6 +182,8 @@ body {
 }
 
 .slider-pagination {
+  display: flex;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -260,7 +262,9 @@ body {
 .services-description {
   position: relative;
 
-  width: 873px;
+  width: 695px;
+  margin-left: 115px;
+  margin-right: 60px;
 }
 
 .services-description-text {

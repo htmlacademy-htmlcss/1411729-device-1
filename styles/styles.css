@@ -392,6 +392,8 @@ body {
 
 /* Footer */
 .page-footer {
+  flex-grow: 1;
+
   display: flex;
   justify-content: center;
 

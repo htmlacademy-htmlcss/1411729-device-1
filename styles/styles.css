@@ -60,19 +60,35 @@ body {
   font-family: Rubik, sans-serif;
 }
 
+.page-header {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  width: 1040px;
+
+  margin: 0 auto;
+
+  position: relative;
+  top: 25px;
+}
+
 .navigation {
-  display: flex;
-  flex-direction: column;
-
-  margin-left: auto;
-  margin-right: auto;
-
   width: 1160px;
   background-color: #ffe17f;
 }
 
+.navigation ul {
+  display: flex;
+  width: 1040px;
+
+  margin: 0 auto;
+}
+
+.navigation ul,
 .navigation li {
-  margin: 0;
   padding: 0;
 }
 

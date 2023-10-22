@@ -120,6 +120,11 @@ body {
   letter-spacing: 3.6px;
 }
 
+/* Page Index */
+.page-index {
+  flex-grow: 1;
+}
+
 .slider {
   display: flex;
   width: 1160px;
@@ -420,13 +425,52 @@ body {
 
 /* Footer */
 .page-footer {
-  flex-grow: 1;
-
-  display: flex;
-  justify-content: center;
-
   background-color: #444;
   color: #ffffff;
+}
+
+.footer-container {
+  width: 1160px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-address {
+  width: 240px;
+
+  align-self: flex-start;
+}
+
+.footer-navigation {
+  width: 445px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-navigation ul {
+  width: 100%;
+
+  display: flex;
+  padding: 0;
+}
+
+.footer-navigation li {
+  padding: 0;
+}
+
+.footer-menu {
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  justify-content: center;
 }
 
 .footer-social-link {
@@ -451,6 +495,10 @@ body {
 
 .footer-social-item:nth-child(3) > .footer-social-link {
   background-image: url("../images/icons/logo-twitter.svg");
+}
+
+.footer-contacts {
+  width: 175px;
 }
 
 /* Hidden */

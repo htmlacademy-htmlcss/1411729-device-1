@@ -77,6 +77,8 @@ body {
 
 .navigation {
   width: 1160px;
+  padding-top: 45px;
+
   background-color: #ffe17f;
 }
 
@@ -90,6 +92,14 @@ body {
 .navigation ul,
 .navigation li {
   padding: 0;
+}
+
+.navigation-user-item:nth-child(2) {
+  margin-right: auto;
+}
+
+.navigation-menu-item:first-child {
+  margin-right: auto;
 }
 
 .product-search-row::placeholder {

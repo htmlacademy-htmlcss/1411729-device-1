@@ -186,32 +186,34 @@
           <button class="button-link button-font" type="submit">ПОКАЗАТЬ</button>
         </form>
 
-        <div class="">
-          <label class="type-sorting">
-            <span class="small-title">СОРТИРОВКА:</span>
+        <div class="catalog-container">
+          <div class="sort-order-container">
+            <label class="type-sorting" for="sort-order-select">
+              <span class="small-title">СОРТИРОВКА:</span>
+            </label>
 
-            <select class="select-control font-rubik">
+            <select class="select-control font-rubik" id="sort-order-select">
               <option value="popular">Популярные</option>
 
               <option value="cheap">Дешёвые</option>
 
               <option value="expensive">Дорогие</option>
             </select>
-          </label>
 
-          <ul class="sort-order-list">
-            <li class="sort-order-item">
-              <button class="sort-order-control" type="button">
-                <span class="visually-hidden">Возрастает</span >
-              </button>
-            </li>
+            <ul class="sort-order-buttons">
+              <li class="sort-order-item">
+                <button class="sort-order-control" type="button">
+                  <span class="visually-hidden">Возрастает</span >
+                </button>
+              </li>
 
-            <li class="sort-order-item">
-              <button class="sort-order-control" type="button">
-                <span class="visually-hidden">Убывает</span >
-              </button>
-            </li>
-          </ul>
+              <li class="sort-order-item">
+                <button class="sort-order-control" type="button">
+                  <span class="visually-hidden">Убывает</span >
+                </button>
+              </li>
+            </ul>
+          </div>
 
           <ul class="product-list">
             <li class="product-card">

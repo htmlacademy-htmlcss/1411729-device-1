@@ -344,6 +344,36 @@ body {
   flex-direction: column;
 }
 
+.catalog-header {
+  width: 1040px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.path-page {
+  display: flex;
+
+  padding: 0;
+}
+
+.sort-order-container {
+  width: 760px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sort-order-buttons {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
 .catalog-products {
   display: flex;
   justify-content: center;

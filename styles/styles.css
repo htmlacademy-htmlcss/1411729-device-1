@@ -288,16 +288,24 @@ body {
 /* Categories */
 .categories-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   width: 1160px;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+
+  list-style-type: none;
 }
 
 .categories-item {
   width: 160px;
+  margin-right: 40px;
+}
+
+.categories-item:nth-child(6) {
+  margin-right: 0;
 }
 
 .categories-link::before {

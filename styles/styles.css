@@ -193,11 +193,13 @@ body {
 .slider {
   display: flex;
   width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap;
 
+  flex-wrap: wrap;
   position: relative;
+
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
 }
 
 .slider-header {
@@ -249,11 +251,23 @@ body {
   padding-left: 20px;
 }
 
+.product-description-slogan {
+  margin-bottom: 25px;
+}
+
+.product-description-text {
+  margin: 0 0 47px;
+}
+
 .product-description-more {
   display: block;
+  box-sizing: border-box;
   width: 220px;
 
   text-align: center;
+
+  padding: 15px;
+  margin-bottom: 40px;
 }
 
 .product-specs-data {
@@ -264,6 +278,7 @@ body {
   font-size: 16px;
   font-weight: 400;
 
+  padding-top: 10px;
   padding-right: 15px;
 }
 
@@ -286,10 +301,13 @@ body {
 }
 
 /* Categories */
+.categories {
+  margin-bottom: 80px;
+}
+
 .categories-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   width: 1160px;
   padding: 0;
@@ -314,6 +332,8 @@ body {
   display: block;
   width: 160px;
   height: 160px;
+
+  margin-bottom: 30px;
 
   background-color: #ffe17f;
   background-position: center;
@@ -345,8 +365,10 @@ body {
 }
 
 .categories-link {
+  display: block;
+
   font-family: Raleway, sans-serif;
-  line-height: 24px;
+  line-height: 25px;
 }
 
 /* Services */

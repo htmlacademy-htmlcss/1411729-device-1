@@ -475,27 +475,73 @@ body {
   background-color: #f0f0f0;
 }
 
-.transport-companies {
-  font-weight: 700;
-  line-height: 20px;
+.info-main-title {
+  margin-top: 0;
+  margin-bottom: 45px;
 }
 
 .info-text-title {
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
+
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0.7em;
+}
+
+.info-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.info-text:nth-last-child(2) {
+  margin-bottom: 35px;
 }
 
 .info {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .info > section {
   width: 520px;
+}
+
+.info-about-us {
+  margin-right: 108px;
+}
+
+.info-main-title::before {
+  content: '';
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  margin-bottom: 40px;
+}
+
+.transport-companies {
+  position: relative;
+
+  list-style-type: none;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.transport-companies li {
+  margin-bottom: 20px;
+}
+
+.transport-companies li::before {
+  content: '•';
+  font-size: 1.7em;
+  position: absolute;
+  left: 0;
 }
 
 /* Subscribe */

@@ -104,7 +104,7 @@ body {
   margin-right: auto;
 }
 
-.navigation-user-item:nth-child(3) {
+.navigation-user-item:nth-last-child(2) {
   margin-right: 35px;
 }
 
@@ -120,7 +120,11 @@ body {
   background: url("../images/icons/user.svg") no-repeat;
 }
 
-.navigation-user-item:nth-child(3) .navigation-user-link::before {
+.navigation-user-exit {
+  margin-right: 25px;
+}
+
+.navigation-user-item:nth-last-child(2) .navigation-user-link::before {
   content: '';
 
   display: inline-block;
@@ -131,7 +135,7 @@ body {
   background: url("../images/icons/sort.svg") no-repeat;
 }
 
-.navigation-user-item:nth-child(4) .navigation-user-link::before {
+.navigation-user-item:last-child .navigation-user-link::before {
   content: '';
 
   display: inline-block;
@@ -633,12 +637,28 @@ body {
 
   margin-left: auto;
   margin-right: auto;
+
+  padding-top: 45px;
+}
+
+.catalog-header-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .path-page {
   display: flex;
+  list-style-type: none;
 
   padding: 0;
+  margin: 0 0 35px;
+}
+
+.path-page-item {
+  margin-right: 37px;
 }
 
 .sort-order-container {

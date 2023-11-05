@@ -44,6 +44,8 @@ body {
 }
 
 .link {
+  display: block;
+
   text-decoration: none;
   color: inherit;
 }
@@ -172,11 +174,10 @@ body {
 
 .button-font {
   font-family: Raleway, sans-serif;
-  font-size: 18px;
   line-height: normal;
   letter-spacing: 3.6px;
 
-  color: #000000;
+  text-align: center;
 }
 
 .navigation-menu-link {
@@ -260,13 +261,9 @@ body {
 }
 
 .product-description-more {
-  display: block;
-  box-sizing: border-box;
   width: 220px;
 
-  text-align: center;
-
-  padding: 15px;
+  padding: 15px 0;
   margin-bottom: 40px;
 }
 
@@ -365,8 +362,6 @@ body {
 }
 
 .categories-link {
-  display: block;
-
   font-family: Raleway, sans-serif;
   line-height: 25px;
 }
@@ -388,9 +383,7 @@ body {
   width: 287px;
   min-height: 320px;
 
-  padding-top: 65px;
-  padding-right: 125px;
-  padding-left: 10px;
+  padding: 65px 0 0;
 
   margin: 0;
   margin-right: 115px;
@@ -402,10 +395,10 @@ body {
 }
 
 .services-name {
-  text-align: center;
+  width: 160px;
 
   margin-bottom: 35px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .services-description {
@@ -496,7 +489,7 @@ body {
 }
 
 .info-text:nth-last-child(2) {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .info {
@@ -542,6 +535,16 @@ body {
   font-size: 1.7em;
   position: absolute;
   left: 0;
+}
+
+.info-about-button {
+  width: max-content;
+  padding: 15px 23px;
+}
+
+.info-contacts-button {
+  width: max-content;
+  padding: 15px 34px;
 }
 
 /* Subscribe */

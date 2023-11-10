@@ -109,7 +109,7 @@ body {
 }
 
 /* Menu icons */
-.navigation-user-item:nth-child(2) .navigation-user-link::before {
+.icon-user::before {
   content: '';
 
   display: inline-block;
@@ -124,7 +124,7 @@ body {
   margin-right: 25px;
 }
 
-.navigation-user-item:nth-last-child(2) .navigation-user-link::before {
+.icon-compare::before {
   content: '';
 
   display: inline-block;
@@ -135,7 +135,7 @@ body {
   background: url("../images/icons/sort.svg") no-repeat;
 }
 
-.navigation-user-item:last-child .navigation-user-link::before {
+.icon-cart::before {
   content: '';
 
   display: inline-block;
@@ -343,27 +343,27 @@ body {
   background-repeat: no-repeat;
 }
 
-.categories-item:nth-child(1) > .categories-link::before {
+.icon-virtual-reality::before {
   background-image: url("../images/icons/virtual-reality.svg");
 }
 
-.categories-item:nth-child(2) > .categories-link::before {
+.icon-selfie-monopod::before {
   background-image: url("../images/icons/selfie-monopod.svg");
 }
 
-.categories-item:nth-child(3) > .categories-link::before {
+.icon-action-camera::before {
   background-image: url("../images/icons/action-camera.svg");
 }
 
-.categories-item:nth-child(4) > .categories-link::before {
+.icon-fitness-bracelet::before {
   background-image: url("../images/icons/fitness-bracelet.svg");
 }
 
-.categories-item:nth-child(5) > .categories-link::before {
+.icon-smart-watches::before {
   background-image: url("../images/icons/smart-watches.svg");
 }
 
-.categories-item:nth-child(6) > .categories-link::before {
+.icon-quadrocopter::before {
   background-image: url("../images/icons/quadrocopter.svg");
 }
 
@@ -974,15 +974,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.footer-social-item:nth-child(1) > .footer-social-link {
+.icon-telegram {
   background-image: url("../images/icons/logo-telegram.svg");
 }
 
-.footer-social-item:nth-child(2) > .footer-social-link {
+.icon-youtube {
   background-image: url("../images/icons/logo-youtube.svg");
 }
 
-.footer-social-item:nth-child(3) > .footer-social-link {
+.icon-x {
   background-image: url("../images/icons/logo-twitter.svg");
 }
 

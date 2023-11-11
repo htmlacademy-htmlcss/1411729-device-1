@@ -45,6 +45,7 @@ body {
 
 .link {
   display: block;
+  width: fit-content;
 
   text-decoration: none;
   color: inherit;
@@ -70,13 +71,14 @@ body {
 }
 
 .logo {
-  display: block;
-  width: 1040px;
+  width: fit-content;
 
-  margin: 0 auto;
+  display: block;
+  margin: 0;
 
   position: relative;
   top: 20px;
+  left: 60px;
 }
 
 .navigation {
@@ -919,11 +921,6 @@ body {
   grid-column: 1 / -1;
 }
 
-/* .footer-address {
-  width: 240px;
-  margin-right: 120px
-} */
-
 .footer-address-text {
   margin-top: 0;
   margin-bottom: 0;
@@ -1002,6 +999,7 @@ body {
 .footer-contacts {
   padding-top: 7px;
 
+  justify-self: end;
   text-align: right;
 }
 

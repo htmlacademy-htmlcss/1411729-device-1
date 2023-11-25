@@ -464,7 +464,7 @@ html {
   width: 160px;
   height: 160px;
 
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   background-color: #ffe17f;
   background-position: center;
@@ -497,7 +497,20 @@ html {
 
 .categories-link {
   font-family: Raleway, sans-serif;
-  line-height: 25px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.categories-link:hover {
+  opacity: 1;
+}
+
+.categories-link:hover::before {
+  background-color: #ffc700;
+}
+
+.categories-link:active {
+  opacity: 0.3;
 }
 
 /* Services */

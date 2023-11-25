@@ -519,7 +519,7 @@ html {
   justify-content: center;
 
   position: relative;
-  margin-bottom: 145px;
+  margin-bottom: 144px;
 }
 
 .services-menu {
@@ -647,7 +647,7 @@ html {
   line-height: normal;
   letter-spacing: 4px;
 
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .banner-delivery-link {
@@ -656,10 +656,56 @@ html {
   justify-content: center;
 
   margin: 0 auto;
+  position: relative;
 
   height: 100px;
   width: 1160px;
   background-color: #f0f0f0;
+}
+
+.banner-delivery-link::before {
+  content: '';
+  width: 125px;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+
+  background: #ffe17f url("../images/icons/delivery-order.svg") no-repeat center;
+}
+
+.banner-delivery-link::after {
+  content: 'i';
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  right: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: rgba(220, 220, 220, 0.5);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  letter-spacing: initial;
+}
+
+.banner-delivery-link:hover {
+  opacity: 1;
+}
+
+.banner-delivery-link:hover::before {
+  background-color: #ffcc33;
+}
+
+.banner-delivery-link:hover::after {
+  color: #000000;
+}
+
+.banner-delivery-link:active {
+  opacity: 0.3;
 }
 
 .info-main-title {

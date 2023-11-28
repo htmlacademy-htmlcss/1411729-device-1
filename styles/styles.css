@@ -830,7 +830,7 @@ html {
   display: flex;
   flex-wrap: wrap;
 
-  padding-top: 63px;
+  padding-top: 65px;
   margin-bottom: 55px;
 }
 
@@ -854,8 +854,13 @@ html {
   margin-right: auto;
 }
 
-.subscribe-email {
+.subscribe-label {
   width: 555px;
+  display: inline-block;
+}
+
+.subscribe-email {
+  width: 560px;
   box-sizing: border-box;
 
   padding: 0;
@@ -863,12 +868,15 @@ html {
   margin: 0;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 50px;
 
-  opacity: 0.5;
   border: none;
   border-bottom: 3px solid #c4c4c4;
   background-color: inherit;
+}
+
+.subscribe-email::placeholder {
+  opacity: 0.5;
 }
 
 .subscribe-btn {
@@ -1243,15 +1251,33 @@ html {
   background-repeat: no-repeat;
 }
 
-.icon-telegram {
+.footer-social-link:hover {
+  background-color: #ffc700;
+  opacity: 1;
+}
+
+.footer-social-link::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-social-link:active::after {
+  opacity: 0.3;
+}
+
+.icon-telegram::after {
   background-image: url("../images/icons/logo-telegram.svg");
 }
 
-.icon-youtube {
+.icon-youtube::after {
   background-image: url("../images/icons/logo-youtube.svg");
 }
 
-.icon-x {
+.icon-x::after {
   background-image: url("../images/icons/logo-twitter.svg");
 }
 

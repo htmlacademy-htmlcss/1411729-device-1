@@ -43,25 +43,25 @@ html {
   color: #000000;
 }
 
-.root button {
+.button {
   cursor: pointer;
   outline: none;
 }
 
-.root button:hover {
+.button:hover {
   opacity: 0.6;
 }
 
-.root button:active {
+.button:active {
   opacity: 0.3;
 }
 
-.root button:focus {
+.button:focus {
   outline: 2px solid #af4fff;
 }
 
-.root button:disabled {
-  opacity: 0.1;
+.button:disabled {
+  opacity: 0.3;
   cursor: initial;
 }
 
@@ -273,19 +273,80 @@ html {
 }
 
 .product-search {
-  width: 517px;
   margin-right: 25px;
+  display: flex;
+}
+
+.product-search-label {
+  position: relative;
+}
+
+.product-search-label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  background: url("../images/icons/search.svg") center no-repeat;
+}
+
+.product-search-row {
+  width: 359px;
+  height: 40px;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0 16px 0 48px;
+
+  border: 2px solid #000000;
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+  background: rgba(255, 225, 127, 0);
+}
+
+.product-search-row:focus {
+  outline: 2px solid #af4fff;
 }
 
 .product-search-row::placeholder {
+  color: #000000;
   opacity: 0.3;
 }
 
+.product-search-row:focus::placeholder {
+  opacity: 1;
+}
+
 .product-search-btn {
+  width: 158px;
   height: 40px;
   box-sizing: border-box;
 
   font-family: Rubik, sans-serif;
+
+  border-radius: 0 50px 50px 0;
+  background: rgba(255, 225, 127, 0);
+  border: 2px solid #000000;
+}
+
+.product-search-btn:hover {
+  opacity: 1;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.product-search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.product-search-btn:disabled:hover,
+.product-search-btn:disabled:active {
+  opacity: 0.3;
+  background: rgba(255, 225, 127, 0);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .small-text {

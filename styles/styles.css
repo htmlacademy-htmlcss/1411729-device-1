@@ -1217,7 +1217,21 @@ html {
   position: relative;
 }
 
-.product-card:hover::before {
+.product-card-link:hover {
+  opacity: 1;
+}
+
+.product-card-link:hover img,
+.product-card-link:hover h3,
+.product-card-link:hover span,
+.product-card-link:focus img,
+.product-card-link:focus h3,
+.product-card-link:focus span {
+  opacity: 0.6;
+}
+
+.product-card-link:hover::before,
+.product-card-link:focus::before {
   content: '';
   position: absolute;
 
@@ -1230,11 +1244,8 @@ html {
   background-color: #ffe17f;
 }
 
-.product-card:active::before {
-  background-color: #ffc700;
-}
-
-.product-card:hover::after {
+.product-card-link:hover::after,
+.product-card-link:focus::after {
   content: 'ПОДРОБНЕЕ';
   position: absolute;
 
@@ -1246,6 +1257,16 @@ html {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   letter-spacing: 3.6px;
+}
+
+.product-card-link:active::before {
+  background-color: #ffc700;
+}
+
+.product-card-link:active img,
+.product-card-link:active h3,
+.product-card-link:active span {
+  opacity: 0.3;
 }
 
 .button-show-more {

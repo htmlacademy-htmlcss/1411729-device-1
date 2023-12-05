@@ -133,14 +133,17 @@ html {
   margin: 0;
 
   position: relative;
+  z-index: 10;
   top: 20px;
   left: 60px;
 }
 
 .navigation {
   width: 1160px;
+
   display: grid;
   padding-top: 45px;
+  position: relative;
 
   background-color: #ffe17f;
 }
@@ -260,8 +263,15 @@ html {
   opacity: 0.3;
 }
 
-.link-product-catalog:hover::after {
+.link-product-catalog:hover::after,
+.link-product-catalog:focus::after {
   opacity: 1;
+  background: url("../images/icons/catalog-minus.svg") center no-repeat;
+}
+
+.navigation-menu-item:first-child:hover .link-product-catalog::after,
+.navigation-menu-item:first-child:focus-within .link-product-catalog::after{
+  background: url("../images/icons/catalog-minus.svg") center no-repeat;
 }
 
 .navigation-menu-item:last-child {
@@ -366,6 +376,38 @@ html {
   font-family: Raleway, sans-serif;
   line-height: normal;
   letter-spacing: 3.6px;
+  z-index: 21;
+}
+
+.navigation-submenu {
+  width: 1160px;
+  box-sizing: border-box;
+
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+
+  padding: 5px 60px 48px;
+  background-color: #ffe17f;
+}
+
+.navigation-menu-item:first-child:hover .navigation-submenu,
+.navigation-menu-item:first-child:focus-within .navigation-submenu {
+  visibility: visible;
+}
+
+.navigation-submenu-list {
+  list-style: none;
+  padding: 0;
+
+  margin-right: 60px;
+  line-height: 36px;
+}
+
+.navigation-submenu-list:nth-child(2) {
+  margin-right: 70px;
 }
 
 /* Page Index */

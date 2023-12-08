@@ -159,78 +159,104 @@
             ФИЛЬТР:
           </h3>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group fieldset-price">
             <legend class="catalog-filter-title">Стоимость</legend>
 
-            <label class="filter-price">
-              <span class="visually-hidden">Настройте диапазон</span>
-              <input class="filter-price-range" type="range" name="price" min="0" max="9000" step="50" value="5000">
-            </label>
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0; width: 120px">
+                <div class="range-wrapper-inputs toggle-min">
+                  <button class="range-toggle">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                </div>
+
+                <div class="range-wrapper-inputs toggle-max">
+                  <button class="range-toggle">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                  </label>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group fieldset-color">
             <legend class="catalog-filter-title">Цвет</legend>
 
             <ul class="filter-color-list small-text">
               <li class="filter-color-item">
-                <label class="filter-color-name">
-                  <input class="filter-color-check" type="checkbox" name="filter-color" value="black" checked>
-                  Чёрный
+                <label class="filter-label">
+                  <input class="visually-hidden filter-check" type="checkbox" name="filter-color" value="black" checked>
+                  <span class="filter-mark filter-checkbox"></span>
+                  <span class="filter-name">Чёрный</span>
                 </label>
               </li>
 
               <li class="filter-color-item">
-                <label class="filter-color-name">
-                  <input class="filter-color-check" type="checkbox" name="filter-color" value="white" checked>
-                  Белый
+                <label class="filter-label">
+                  <input class="visually-hidden filter-check" type="checkbox" name="filter-color" value="white" checked>
+                  <span class="filter-mark filter-checkbox"></span>
+                  <span class="filter-name">Белый</span>
                 </label>
               </li>
 
               <li class="filter-color-item">
-                <label class="filter-color-name">
-                  <input class="filter-color-check" type="checkbox" name="filter-color" value="blue">
-                  Синий
+                <label class="filter-label">
+                  <input class="visually-hidden filter-check" type="checkbox" name="filter-color" value="blue">
+                  <span class="filter-mark filter-checkbox"></span>
+                  <span class="filter-name">Синий</span>
                 </label>
               </li>
 
               <li class="filter-color-item">
-                <label class="filter-color-name">
-                  <input class="filter-color-check" type="checkbox" name="filter-color" value="red">
-                  Красный
+                <label class="filter-label">
+                  <input class="visually-hidden filter-check" type="checkbox" name="filter-color" value="red">
+                  <span class="filter-mark filter-checkbox"></span>
+                  <span class="filter-name">Красный</span>
                 </label>
               </li>
 
               <li class="filter-color-item">
-                <label class="filter-color-name">
-                  <input class="filter-color-check" type="checkbox" name="filter-color" value="pink">
-                  Розовый
+                <label class="filter-label">
+                  <input class="visually-hidden filter-check" type="checkbox" name="filter-color" value="pink">
+                  <span class="filter-mark filter-checkbox"></span>
+                  <span class="filter-name">Розовый</span>
                 </label>
               </li>
             </ul>
 
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group fieldset-bluetooth">
             <legend class="catalog-filter-title">Bluetooth</legend>
 
             <ul class="filter-bluetooth-list small-text">
               <li class="filter-bluetooth-item">
-                <label class="filter-bluetooth-status">
-                  <input class="filter-bluetooth-check" type="radio" name="bluetooth" value="yes" checked>
-                  Есть
+                <label class="filter-label filter-bluetooth-status">
+                  <input class="visually-hidden filter-check" type="radio" name="bluetooth" value="yes" checked>
+                  <span class="filter-mark filter-radio"></span>
+                  <span class="filter-name">Есть</span>
                 </label>
               </li>
 
               <li class="filter-bluetooth-item">
-                <label class="filter-bluetooth-status">
-                  <input class="filter-bluetooth-check" type="radio" name="bluetooth" value="no">
-                  Нет
+                <label class="filter-label filter-bluetooth-status">
+                  <input class="visually-hidden filter-check" type="radio" name="bluetooth" value="no">
+                  <span class="filter-mark filter-radio"></span>
+                  <span class="filter-name">Нет</span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <button class="button button-box button-font" type="submit">
+          <button class="button button-appearance button-box button-font" type="submit">
             ПОКАЗАТЬ
           </button>
         </form>

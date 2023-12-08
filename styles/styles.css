@@ -60,8 +60,12 @@ html {
   opacity: 0.3;
 }
 
-.button:focus {
+.focus-outline:focus {
   outline: 2px solid #af4fff;
+}
+
+.button-light {
+  outline-offset: 2px;
 }
 
 .button:disabled {
@@ -1076,7 +1080,32 @@ html {
 }
 
 .sort-order-item:first-child {
-  margin-right: 15px;
+  margin-right: 21px;
+  transform: rotate(180deg) translateY(-2px);
+}
+
+.sort-order-control {
+  padding: 0;
+
+  border: 10px solid rgba(0, 0, 0, 0);
+  border-right-width: 5.5px;
+  border-bottom-width: 0;
+  border-left-width: 5.5px;
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.sort-order-control:hover {
+  opacity: 1;
+  border-top-color: rgba(0, 0, 0, 0.5);
+}
+
+.order-active,
+.sort-order-control:active {
+  border-top-color: rgba(0, 0, 0, 1);
+}
+
+.sort-order-control:focus {
+  outline-offset: 11px;
 }
 
 .catalog-products {
@@ -1349,13 +1378,25 @@ html {
 }
 
 .select-control {
-  margin-right: 220px;
+  margin-right: 223px;
   padding-right: 7px;
 
   font-size: 18px;
 
   border: none;
   background-color: #f0f0f0;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
 }
 
 .product-list {
@@ -1485,35 +1526,73 @@ html {
   background-color: #ebebeb;
 }
 
-.pagination-item {
-  color: #444;
-  opacity: 0.3;
-  padding: 15px;
-}
-
 .pagination-item:first-child {
   margin-right: auto;
+}
+
+.pagination-item:nth-last-child(2) {
+  margin-right: auto;
+}
+
+.pagination-prev,
+.pagination-next {
+  color: rgba(0, 0, 0, 0);
+  user-select: none;
+}
+
+.pagination-prev {
   padding: 25px;
 }
 
-.pagination-item:last-child {
-  margin-left: auto;
+.pagination-next {
   padding: 25px 22px;
 }
 
+.pagination-active {
+  color: #000000;
+}
+
+.pagination-active:hover {
+  background-color: #dcdcdc;
+  opacity: 1;
+}
+
+.pagination-active:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-dots .pagination-link,
+.pagination-dots .pagination-link:hover,
+.pagination-dots .pagination-link:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .pagination-link {
+  padding: 10px 15px;
+  color: rgba(68, 68, 68, 0.3);
+
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
 }
 
-.pagination-current {
-  opacity: 0.6;
+.pagination-current .pagination-link,
+.pagination-current .pagination-link:hover,
+.pagination-current .pagination-link:active {
+  color: rgba(68, 68, 68, 0.6);
 }
 
-.pagination-active {
-  color: #000000;
+.pagination-link:hover {
   opacity: 1;
+  color: rgba(68, 68, 68, 1);
+}
+
+.pagination-link:active {
+  color: rgba(68, 68, 68, 0.1);
+}
+
+.pagination-link:focus {
+  outline-offset: 12px 15px;
 }
 
 /* Footer */

@@ -1267,6 +1267,10 @@ html {
   cursor: pointer;
 }
 
+.filter-mark {
+  position: relative;
+}
+
 .filter-label:hover {
   opacity: 0.6;
 }
@@ -1307,12 +1311,9 @@ html {
 
 .filter-radio {
   border-radius: 50%;
-
-  transform-origin: center;
 }
 
 .filter-check:checked + .filter-radio {
-  position: relative;
   border-color: #000000;
 }
 
@@ -1327,6 +1328,19 @@ html {
 
   border-radius: 50%;
   background-color: #000000;
+}
+
+.filter-check:focus + .filter-mark::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: -4px;
+  left: -4px;
+
+  border: 2px solid #af4fff;
 }
 
 /* Sorting and cards */

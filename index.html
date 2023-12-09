@@ -24,7 +24,7 @@
 
             <form class="product-search" action="https://echo.htmlacademy.ru/" method="get">
 
-              <label class="product-search-label">
+              <label class="product-search-label position-relative">
                 <span class="visually-hidden">Найти товар в каталоге</span>
               </label>
               <input class="product-search-row small-text font-rubik" type="text" name="product-name" placeholder="Поиск по сайту">
@@ -43,9 +43,57 @@
             <a class="navigation-user-link icon-compare link" href="#">Сравнить</a>
 
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-user-item position-relative">
 
-            <a class="navigation-user-link icon-cart link" href="#">Корзина</a>
+            <a class="navigation-user-link link icon-cart position-relative" href="#">Корзина</a>
+
+            <div class="visually-hidden popover popover-cart small-text">
+              <h2 class="visually-hidden">Корзина</h2>
+
+              <ul class="product-cart-list">
+                <li>
+                  <a class="product-link link" href="">
+                    <img class="product-image" src="images/products/selfie-stick.jpg" width="39px" height="43px" alt="">
+                    <p class="product-name">Любительская селфи-палка</p>
+                  </a>
+
+                  <button class="product-cart-close button focus-outline" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+
+                <li>
+                  <a class="product-link link" href="">
+                    <img class="product-image" src="images/products/selfie-stick-pro.jpg" width="39px" height="43px" alt="">
+                    <p class="product-name">Профессиональная селфи-палка</p>
+                  </a>
+
+                  <button class="product-cart-close button focus-outline" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+              </ul>
+
+              <table class="product-cart-total"  border="0" cellspacing="0" cellpadding="0">
+                <caption class="visually-hidden">Всего в корзине</caption>
+
+                <tbody class="product-cart-table">
+                  <tr>
+                    <th class="product-table-header">Товаров:</th>
+                    <td class="">2</td>
+                  </tr>
+
+                  <tr>
+                    <th class="product-table-header">Сумма:</th>
+                    <td class="">2000 &#8381;</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button class="product-cart-open button focus-outline button-font button-light" type="button">
+                ОТКРЫТЬ КОРЗИН<span class="letter-spacing-reset">У</span>
+              </button>
+            </div>
 
           </li>
         </ul>
@@ -98,17 +146,17 @@
           </li>
           <li class="navigation-menu-item">
 
-            <a class="navigation-menu-link link" href="#">ДОСТАВКА</a>
+            <a class="navigation-menu-link link" href="#">ДОСТАВК<span class="letter-spacing-reset">А</span></a>
 
           </li>
           <li class="navigation-menu-item">
 
-            <a class="navigation-menu-link link" href="#">ГАРАНТИЯ</a>
+            <a class="navigation-menu-link link" href="#">ГАРАНТИ<span class="letter-spacing-reset">Я</span></a>
 
           </li>
           <li class="navigation-menu-item">
 
-            <a class="navigation-menu-link link" href="#">КОНТАКТ<span class="spacing-reset">Ы</span></a>
+            <a class="navigation-menu-link link" href="#">КОНТАКТ<span class="letter-spacing-reset">Ы</span></a>
 
           </li>
         </ul>

@@ -501,6 +501,59 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container visually-hidden">
+      <div class="modal modal-delivery">
+        <h2 class="modal-title big-title">Доставка под заказ</h2>
+
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="modal-form-row modal-user-info">
+            <label class="modal-form-label modal-input-icon icon-name">
+              <span>Ваше имя:</span>
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="name" placeholder="Введите имя">
+            </label>
+
+            <label class="modal-form-label modal-input-icon icon-mail">
+              <span>Ваш e-mail:</span>
+              <input class="modal-form-input focus-outline font-rubik" type="email" name="email" placeholder="Введите e-mail">
+              <span class="modal-input-tip">Забавный у вас адрес</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row modal-delivery-info">
+            <label class="modal-form-label">
+              <span>Что нужно привезти:</span>
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="something" placeholder="В свободной форме">
+            </label>
+
+            <label class="modal-form-label" for="quantity-input">
+              <span>Количество:</span>
+
+              <span class="modal-tooltip">
+                <button class="modal-tooltip-button focus-outline" aria-labelledby="tooltip-label-date" type="button">
+                  i
+                </button>
+                <span class="modal-tooltip-text small-text" role="tooltip" id="tooltip-label-date">
+                  Постараемся найти, сколько нужно.
+                  Привезём сколько получится
+                  по требованиям к провозу багажа
+                </span>
+              </span>
+
+              <input class="modal-form-input modal-quantity focus-outline font-rubik" id="quantity-input" type="number" name="quantity" value="1" placeholder="">
+            </label>
+          </div>
+
+          <button class="modal-send button focus-outline button-appearance button-box button-font" type="submit">
+            ОТПРАВИТ<span class="letter-spacing-reset">Ь</span>
+          </button>
+        </form>
+
+        <button class="modal-close button focus-outline" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </div>
   </body>
 
 </html>

@@ -204,6 +204,7 @@ html {
 
 .navigation-user-exit {
   margin-right: 25px;
+  opacity: 0.3;
 }
 
 .icon-compare::before {
@@ -1277,7 +1278,7 @@ html {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
 }
 
@@ -1975,7 +1976,7 @@ html {
 
 .modal-delivery-info {
   grid-template-columns: 540px 180px;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .modal-form-label {
@@ -2062,11 +2063,63 @@ html {
   outline-offset: 2px;
 }
 
+.modal-quantity-field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.modal-quantity {
+  width: 100%;
+  text-align: center;
+}
+
 .modal-quantity::-webkit-outer-spin-button,
 .modal-quantity::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
+
+.quantity-button {
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.quantity-sign {
+  fill: #000000;
+}
+
+.quantity-button:hover {
+  background-color: #ebebeb;
+}
+
+.quantity-button:hover .quantity-sign {
+  opacity: 0.6;
+}
+
+
+.quantity-button:active {
+  background-color: #f0f0f0;
+}
+
+.quantity-button:active .quantity-sign {
+  opacity: 0.3;
+}
+
+.quantity-button:disabled {
+  background-color: #fafafa;
+}
+
+.quantity-button:disabled .quantity-sign,
+.quantity-button:disabled:hover .quantity-sign {
+  opacity: 1;
+  fill: #E5E5E5;
+}
+
+.quantity-button:disabled:hover {
+  background-color: #fafafa;
+}
+
+
 
 .modal-form-input::placeholder {
   color: #000000;
@@ -2134,10 +2187,6 @@ html {
 
 .icon-mail::after {
   background: url("../images/icons/e-mail.svg") no-repeat center;
-}
-
-.modal-quantity {
-  text-align: center;
 }
 
 .modal-send {

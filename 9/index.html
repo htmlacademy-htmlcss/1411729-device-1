@@ -48,13 +48,14 @@
 
             <a class="navigation-user-link link icon-cart position-relative" href="#">Корзина</a>
 
+            <!-- Popover -->
             <div class="visually-hidden popover popover-cart small-text">
               <h2 class="visually-hidden">Корзина</h2>
 
               <ul class="product-cart-list">
                 <li>
                   <a class="product-link link" href="">
-                    <img class="product-image" src="images/products/selfie-stick.jpg" width="39px" height="43px" alt="">
+                    <img class="product-image" src="images/products/selfie-stick.jpg" width="39" height="43" alt="Привью товара">
                     <p class="product-name">Любительская селфи-палка</p>
                   </a>
 
@@ -65,7 +66,7 @@
 
                 <li>
                   <a class="product-link link" href="">
-                    <img class="product-image" src="images/products/selfie-stick-pro.jpg" width="39px" height="43px" alt="">
+                    <img class="product-image" src="images/products/selfie-stick-pro.jpg" width="39" height="43" alt="Привью товара">
                     <p class="product-name">Профессиональная селфи-палка</p>
                   </a>
 
@@ -75,7 +76,7 @@
                 </li>
               </ul>
 
-              <table class="product-cart-total"  border="0" cellspacing="0" cellpadding="0">
+              <table class="product-cart-total">
                 <caption class="visually-hidden">Всего в корзине</caption>
 
                 <tbody class="product-cart-table">
@@ -95,6 +96,7 @@
                 ОТКРЫТЬ КОРЗИН<span class="letter-spacing-reset">У</span>
               </button>
             </div>
+            <!-- End -->
 
           </li>
         </ul>
@@ -312,7 +314,7 @@
           <h3 class="services-description-name big-title">Доставка</h3>
 
           <p class="services-description-text">
-            Мы с удовольствием доставим ваш товар прямо<br />
+            Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
@@ -362,12 +364,12 @@
           <h2 class="info-main-title big-title">Контакты</h2>
 
           <p class="info-text">
-            Вы можете забрать товар сами, заехав в наш офис.<br />
+            Вы можете забрать товар сами, заехав в наш офис.<br>
             Заодно сможете проверить работоспособность покупки.
           </p>
 
           <address class="info-text contacts-address">
-            <span class="info-text-title">Интернет-магазин «Девайс»</span><br />
+            <span class="info-text-title">Интернет-магазин «Девайс»</span><br>
 
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
 
@@ -377,7 +379,7 @@
           <h3 class="info-text-title">Время работы</h3>
 
           <p class="info-text">
-            пн—пт: с 10:00 до 22:00<br />
+            пн—пт: с 10:00 до 22:00<br>
             сб—вс: с 10:00 до 19:00
           </p>
 
@@ -392,7 +394,7 @@
           <strong class="subscribe-call big-title">Подпишитесь на рассылку</strong>
 
           <p class="subscribe-text">
-            Еженедельный дайджест с обзорами новинок,<br />
+            Еженедельный дайджест с обзорами новинок,<br>
             длительными тест-драйвами, распаковками,
             а также акции, спецпредложения и вот это вот всё.
           </p>
@@ -530,8 +532,10 @@
               <input class="modal-form-input focus-outline font-rubik" type="text" name="something" placeholder="В свободной форме">
             </label>
 
-            <label class="modal-form-label" for="quantity-input">
-              <span>Количество:</span>
+            <div class="quantity-wrapper">
+              <label class="modal-form-label" for="quantity-input">
+                <span>Количество:</span>
+              </label>
 
               <span class="modal-tooltip">
                 <button class="modal-tooltip-button focus-outline" aria-labelledby="tooltip-label-date" type="button">
@@ -544,6 +548,7 @@
                 </span>
               </span>
 
+
               <div class="modal-quantity-field">
                 <button class="quantity-button focus-outline" type="button">
                   <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
@@ -554,7 +559,7 @@
                 <input class="modal-form-input modal-quantity focus-outline font-rubik" id="quantity-input" type="number" name="quantity" value="1" placeholder="" min="1">
 
                 <button class="quantity-button focus-outline" type="button">
-                  <svg class="quantity-sign width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_11518_3294)">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
                     </g>
@@ -566,7 +571,7 @@
                   </svg>
                 </button>
               </div>
-            </label>
+            </div>
           </div>
 
           <button class="modal-send button focus-outline button-appearance button-box button-font" type="submit">
@@ -574,6 +579,7 @@
           </button>
         </form>
 
+        <!-- Modal window -->
         <button class="modal-close button focus-outline" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>

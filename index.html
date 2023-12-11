@@ -24,12 +24,12 @@
 
             <form class="product-search" action="https://echo.htmlacademy.ru/" method="get">
 
-              <label class="product-search-label">
+              <label class="product-search-label position-relative">
                 <span class="visually-hidden">Найти товар в каталоге</span>
               </label>
               <input class="product-search-row small-text font-rubik" type="text" name="product-name" placeholder="Поиск по сайту">
 
-              <button class="button product-search-btn small-text" type="submit">Найти</button>
+              <button class="button focus-outline product-search-btn small-text" type="submit">Найти</button>
             </form>
 
           </li>
@@ -43,9 +43,59 @@
             <a class="navigation-user-link icon-compare link" href="#">Сравнить</a>
 
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-user-item position-relative">
 
-            <a class="navigation-user-link icon-cart link" href="#">Корзина</a>
+            <a class="navigation-user-link link icon-cart position-relative" href="#">Корзина</a>
+
+            <!-- Popover -->
+            <div class="visually-hidden popover popover-cart small-text">
+              <h2 class="visually-hidden">Корзина</h2>
+
+              <ul class="product-cart-list">
+                <li>
+                  <a class="product-link link" href="">
+                    <img class="product-image" src="images/products/selfie-stick.jpg" width="39" height="43" alt="Привью товара">
+                    <p class="product-name">Любительская селфи-палка</p>
+                  </a>
+
+                  <button class="product-cart-close button focus-outline" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+
+                <li>
+                  <a class="product-link link" href="">
+                    <img class="product-image" src="images/products/selfie-stick-pro.jpg" width="39" height="43" alt="Привью товара">
+                    <p class="product-name">Профессиональная селфи-палка</p>
+                  </a>
+
+                  <button class="product-cart-close button focus-outline" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+              </ul>
+
+              <table class="product-cart-total">
+                <caption class="visually-hidden">Всего в корзине</caption>
+
+                <tbody class="product-cart-table">
+                  <tr>
+                    <th class="product-table-header">Товаров:</th>
+                    <td class="">2</td>
+                  </tr>
+
+                  <tr>
+                    <th class="product-table-header">Сумма:</th>
+                    <td class="">2000 &#8381;</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button class="product-cart-open button focus-outline button-font button-light" type="button">
+                ОТКРЫТЬ КОРЗИН<span class="letter-spacing-reset">У</span>
+              </button>
+            </div>
+            <!-- End -->
 
           </li>
         </ul>
@@ -98,17 +148,17 @@
           </li>
           <li class="navigation-menu-item">
 
-            <a class="navigation-menu-link link" href="#">ДОСТАВКА</a>
+            <a class="navigation-menu-link link" href="#">ДОСТАВК<span class="letter-spacing-reset">А</span></a>
 
           </li>
           <li class="navigation-menu-item">
 
-            <a class="navigation-menu-link link" href="#">ГАРАНТИЯ</a>
+            <a class="navigation-menu-link link" href="#">ГАРАНТИ<span class="letter-spacing-reset">Я</span></a>
 
           </li>
           <li class="navigation-menu-item">
 
-            <a class="navigation-menu-link link" href="#">КОНТАКТ<span class="spacing-reset">Ы</span></a>
+            <a class="navigation-menu-link link" href="#">КОНТАКТ<span class="letter-spacing-reset">Ы</span></a>
 
           </li>
         </ul>
@@ -131,11 +181,11 @@
         <section class="product-photo-carousel">
           <h3 class="visually-hidden">Фотографии</h3>
 
-          <button class="button product-photo-previos product-photo-button" type="button">
+          <button class="button focus-outline product-photo-previos product-photo-button" type="button">
             <span class="visually-hidden">Назад</span >
           </button>
 
-          <button class="button product-photo-next product-photo-button" type="button">
+          <button class="button focus-outline product-photo-next product-photo-button" type="button">
             <span class="visually-hidden">Вперёд</span >
           </button>
 
@@ -178,21 +228,21 @@
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
 
-            <button class="button slider-pagination-btn slider-pagination-btn-current" type="button">
+            <button class="button focus-outline slider-pagination-btn slider-pagination-btn-current" type="button">
               <span class="visually-hidden">Продукт 1</span>
             </button>
 
           </li>
           <li class="slider-pagination-item">
 
-            <button class="button slider-pagination-btn" type="button">
+            <button class="button focus-outline slider-pagination-btn" type="button">
               <span class="visually-hidden">Продукт 2</span>
             </button>
 
           </li>
           <li class="slider-pagination-item">
 
-            <button class="button slider-pagination-btn" type="button">
+            <button class="button focus-outline slider-pagination-btn" type="button">
               <span class="visually-hidden">Продукт 3</span>
             </button>
 
@@ -263,7 +313,7 @@
           <h3 class="services-description-name big-title">Доставка</h3>
 
           <p class="services-description-text">
-            Мы с удовольствием доставим ваш товар прямо<br />
+            Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
@@ -313,12 +363,12 @@
           <h2 class="info-main-title big-title">Контакты</h2>
 
           <p class="info-text">
-            Вы можете забрать товар сами, заехав в наш офис.<br />
+            Вы можете забрать товар сами, заехав в наш офис.<br>
             Заодно сможете проверить работоспособность покупки.
           </p>
 
           <address class="info-text contacts-address">
-            <span class="info-text-title">Интернет-магазин «Девайс»</span><br />
+            <span class="info-text-title">Интернет-магазин «Девайс»</span><br>
 
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
 
@@ -328,7 +378,7 @@
           <h3 class="info-text-title">Время работы</h3>
 
           <p class="info-text">
-            пн—пт: с 10:00 до 22:00<br />
+            пн—пт: с 10:00 до 22:00<br>
             сб—вс: с 10:00 до 19:00
           </p>
 
@@ -343,7 +393,7 @@
           <strong class="subscribe-call big-title">Подпишитесь на рассылку</strong>
 
           <p class="subscribe-text">
-            Еженедельный дайджест с обзорами новинок,<br />
+            Еженедельный дайджест с обзорами новинок,<br>
             длительными тест-драйвами, распаковками,
             а также акции, спецпредложения и вот это вот всё.
           </p>
@@ -355,7 +405,7 @@
               <input class="subscribe-email font-rubik" type="email" name="subscribe-email" placeholder="Ваш e-mail">
             </label>
 
-            <button class="button subscribe-btn button-font button-light" type="submit">
+            <button class="button focus-outline subscribe-btn button-font button-light" type="submit">
               ПОДПИСАТЬСЯ
             </button>
 
@@ -453,6 +503,87 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container visually-hidden">
+      <div class="modal modal-delivery">
+        <h2 class="modal-title big-title">Доставка под заказ</h2>
+
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="modal-form-row modal-user-info">
+            <label class="modal-form-label modal-input-icon icon-name">
+              <span>Ваше имя:</span>
+
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="name" placeholder="Введите имя">
+            </label>
+
+            <label class="modal-form-label modal-input-icon icon-mail">
+              <span>Ваш e-mail:</span>
+
+              <input class="modal-form-input focus-outline font-rubik" type="email" name="email" placeholder="Введите e-mail">
+              <span class="modal-input-tip">Забавный у вас адрес</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row modal-delivery-info">
+            <label class="modal-form-label">
+              <span>Что нужно привезти:</span>
+
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="something" placeholder="В свободной форме">
+            </label>
+
+            <div class="quantity-wrapper">
+              <label class="modal-form-label" for="quantity-input">
+                <span>Количество:</span>
+              </label>
+
+              <span class="modal-tooltip">
+                <button class="modal-tooltip-button focus-outline" aria-labelledby="tooltip-label-date" type="button">
+                  i
+                </button>
+                <span class="modal-tooltip-text small-text" role="tooltip" id="tooltip-label-date">
+                  Постараемся найти, сколько нужно.
+                  Привезём сколько получится
+                  по требованиям к провозу багажа
+                </span>
+              </span>
+
+
+              <div class="modal-quantity-field">
+                <button class="quantity-button focus-outline" type="button">
+                  <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H0V9H16V7Z"/>
+                  </svg>
+                </button>
+
+                <input class="modal-form-input modal-quantity focus-outline font-rubik" id="quantity-input" type="number" name="quantity" value="1" placeholder="" min="1">
+
+                <button class="quantity-button focus-outline" type="button">
+                  <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_11518_3294)">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_11518_3294">
+                    <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal-send button focus-outline button-appearance button-box button-font" type="submit">
+            ОТПРАВИТ<span class="letter-spacing-reset">Ь</span>
+          </button>
+        </form>
+
+        <!-- Modal window -->
+        <button class="modal-close button focus-outline" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </div>
   </body>
 
 </html>

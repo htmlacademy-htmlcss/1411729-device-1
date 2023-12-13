@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>HTML Academy: Девайс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1411729-device-1/10/">
+</head>
+
+  <body class="root">
+    <header class="page-header">
+
+      <a class="logo link" href="index.html">
+        <img class="logo-header" src="images/icons/logo.svg" width="145" height="36" alt="Логотип «device».">
+      </a>
+
+      <nav class="navigation">
+
+        <ul class="navigation-user navigation-list">
+          <li class="navigation-user-item">
+
+            <form class="product-search" action="https://echo.htmlacademy.ru/" method="get">
+
+              <label class="product-search-label position-relative">
+                <span class="visually-hidden">Найти товар в каталоге</span>
+              </label>
+              <input class="product-search-row small-text font-rubik" type="text" name="product-name" placeholder="Поиск по сайту">
+
+              <button class="button focus-outline product-search-btn small-text" type="submit">Найти</button>
+            </form>
+
+          </li>
+          <li class="navigation-user-item">
+
+            <a class="navigation-user-link icon-user link" href="#">Войти</a>
+
+          </li>
+          <li class="navigation-user-item">
+
+            <a class="navigation-user-link icon-compare link" href="#">Сравнить</a>
+
+          </li>
+          <li class="navigation-user-item position-relative">
+
+            <a class="navigation-user-link link icon-cart position-relative" href="#">Корзина</a>
+
+            <!-- Popover -->
+            <div class="visually-hidden popover popover-cart small-text">
+              <h2 class="visually-hidden">Корзина</h2>
+
+              <ul class="product-cart-list">
+                <li>
+                  <a class="product-link link" href="">
+                    <img class="product-image" src="images/products/selfie-stick.jpg" width="39" height="43" alt="Привью товара.">
+                    <p class="product-name">Любительская селфи-палка</p>
+                  </a>
+
+                  <button class="product-cart-close button focus-outline" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+
+                <li>
+                  <a class="product-link link" href="">
+                    <img class="product-image" src="images/products/selfie-stick-pro.jpg" width="39" height="43" alt="Привью товара.">
+                    <p class="product-name">Профессиональная селфи-палка</p>
+                  </a>
+
+                  <button class="product-cart-close button focus-outline" type="button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                </li>
+              </ul>
+
+              <table class="product-cart-total">
+                <caption class="visually-hidden">Всего в корзине</caption>
+
+                <tbody class="product-cart-table">
+                  <tr>
+                    <th class="product-table-header">Товаров:</th>
+                    <td class="">2</td>
+                  </tr>
+
+                  <tr>
+                    <th class="product-table-header">Сумма:</th>
+                    <td class="">2000 &#8381;</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button class="product-cart-open button focus-outline button-font button-light" type="button">
+                ОТКРЫТЬ КОРЗИН<span class="letter-spacing-reset">У</span>
+              </button>
+            </div>
+            <!-- End -->
+
+          </li>
+        </ul>
+
+        <ul class="navigation-menu navigation-list">
+          <li class="navigation-menu-item navigation-menu-catalog">
+
+            <a class="navigation-menu-link link link-product-catalog" href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+
+            <div class="navigation-submenu">
+              <ul class="navigation-submenu-list small-text">
+                <li class="navigation-submenu-item">
+
+                  <a class="link" href="#">Виртуальная реальность</a>
+
+                </li>
+                <li class="navigation-submenu-item">
+
+                  <a class="link" href="#">Моноподы для селфи</a>
+
+                </li>
+                <li class="navigation-submenu-item">
+
+                  <a class="link" href="#">Экшн-камеры</a>
+
+                </li>
+              </ul>
+
+              <ul class="navigation-submenu-list small-text">
+                <li class="navigation-submenu-item">
+
+                  <a class="link" href="#">Фитнес-браслеты</a>
+
+                </li>
+                <li class="navigation-submenu-item">
+
+                  <a class="link" href="#">Умные часы</a>
+
+                </li>
+              </ul>
+
+              <ul class="navigation-submenu-list small-text">
+                <li class="navigation-submenu-item">
+
+                  <a class="link" href="#">Квадрокоптеры</a>
+
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navigation-menu-item">
+
+            <a class="navigation-menu-link link" href="#">ДОСТАВК<span class="letter-spacing-reset">А</span></a>
+
+          </li>
+          <li class="navigation-menu-item">
+
+            <a class="navigation-menu-link link" href="#">ГАРАНТИ<span class="letter-spacing-reset">Я</span></a>
+
+          </li>
+          <li class="navigation-menu-item">
+
+            <a class="navigation-menu-link link" href="#">КОНТАКТ<span class="letter-spacing-reset">Ы</span></a>
+
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+
+    <main class="page-stretch">
+      <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+
+      <article class="slider">
+        <h2 class="visually-hidden">Специальное предложение</h2>
+
+        <div class="slider-header">
+          <p class="slider-header-number">
+            01
+          </p>
+        </div>
+
+        <section class="product-photo-carousel">
+          <h3 class="visually-hidden">Фотографии</h3>
+
+          <button class="button focus-outline product-photo-previos product-photo-button" type="button">
+            <span class="visually-hidden">Назад</span >
+          </button>
+
+          <button class="button focus-outline product-photo-next product-photo-button" type="button">
+            <span class="visually-hidden">Вперёд</span >
+          </button>
+
+          <img class="product-photo" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер стреляет лазером.">
+        </section>
+
+        <section class="product-description">
+          <h3 class="visually-hidden">Квадрокоптер «Бабочка-Пчела»</h3>
+
+          <p class="product-description-slogan big-title">
+            <strong>
+            Порхает как бабочка,
+            жалит как пчела!
+            </strong>
+          </p>
+
+          <p class="product-description-text">
+            Этот обычный, на первый взгляд,
+            квадрокоптер оснащен мощным лазером,
+            замаскированным под стандартную камеру.
+          </p>
+
+          <a class="product-description-more button-appearance button-font link" href="#">
+            ПОДРОБНЕ<span class="letter-spacing-reset">Е</span>
+          </a>
+
+          <table class="product-specs">
+            <caption class="visually-hidden">Характеристики</caption>
+
+            <tr>
+              <td class="product-specs-data">800 м</td>
+              <td class="product-specs-data">50 м</td>
+            </tr>
+
+            <tr>
+              <th class="product-specs-title">Дальность полёта</th>
+              <th class="product-specs-title">Радиус поражения</th>
+            </tr>
+          </table>
+        </section>
+
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+
+            <button class="button focus-outline slider-pagination-btn slider-pagination-btn-current" type="button">
+              <span class="visually-hidden">Продукт 1</span>
+            </button>
+
+          </li>
+          <li class="slider-pagination-item">
+
+            <button class="button focus-outline slider-pagination-btn" type="button">
+              <span class="visually-hidden">Продукт 2</span>
+            </button>
+
+          </li>
+          <li class="slider-pagination-item">
+
+            <button class="button focus-outline slider-pagination-btn" type="button">
+              <span class="visually-hidden">Продукт 3</span>
+            </button>
+
+          </li>
+        </ol>
+      </article>
+
+      <section class="categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
+
+        <ul class="categories-navigation">
+          <li class="categories-item">
+
+            <a class="categories-link icon-virtual-reality link" href="#">Виртуальная реальность</a>
+
+          </li>
+          <li class="categories-item">
+
+            <a class="categories-link icon-selfie-monopod link" href="#">Моноподы<br> для селфи</a>
+
+          </li>
+          <li class="categories-item">
+
+            <a class="categories-link icon-action-camera link" href="#">Экшн-камеры</a>
+
+          </li>
+          <li class="categories-item">
+
+            <a class="categories-link icon-fitness-bracelet link" href="#">Фитнес-браслеты</a>
+
+          </li>
+          <li class="categories-item">
+
+            <a class="categories-link icon-smart-watches link" href="#">Умные часы</a>
+
+          </li>
+          <li class="categories-item">
+
+            <a class="categories-link icon-quadrocopter link" href="#">Квадрокоптеры</a>
+
+          </li>
+        </ul>
+      </section>
+
+      <section class="services">
+        <h2 class="visually-hidden">Информация об услугах</h2>
+
+        <fieldset class="services-menu">
+          <legend class="visually-hidden">Вид услуги</legend>
+
+          <input class="visually-hidden services-menu-item" id="text-1" type="radio" name="service-name" checked>
+          <label for="text-1" class="services-name button-font">
+            ДОСТАВК<span class="letter-spacing-reset">А</span>
+          </label>
+
+          <input class="visually-hidden services-menu-item" id="text-2" type="radio" name="service-name">
+          <label for="text-2" class="services-name button-font">
+            ГАРАНТИ<span class="letter-spacing-reset">Я</span>
+          </label>
+
+          <input class="visually-hidden services-menu-item" id="text-3" type="radio" name="service-name">
+          <label for="text-3" class="services-name button-font">
+            КРЕДИ<span class="letter-spacing-reset">Т</span>
+          </label>
+        </fieldset>
+
+        <div class="services-description">
+          <h3 class="services-description-name big-title">Доставка</h3>
+
+          <p class="services-description-text">
+            Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно! Ведь
+            мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
+
+        </div>
+
+        <div class="gray-background">
+          <!-- Фон блока -->
+        </div>
+      </section>
+
+      <section class="banner-delivery">
+        <h2 class="visually-hidden">Заказ товара</h2>
+
+        <a class="banner-delivery-link link" href="#">ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКА<span class="letter-spacing-reset">З</span></a>
+      </section>
+
+      <div class="info">
+        <section class="info-about-us">
+
+          <h2 class="info-main-title big-title">О нас</h2>
+
+          <p class="info-text">
+            Огромный выбор гаджетов не оставит равнодушным<br>
+            гика, который есть в каждом из нас.
+          </p>
+
+          <p class="info-text">
+            Мы можем доставить ваш товар
+            в самые отдалённые уголки России транспортными компаниями:
+          </p>
+
+          <ul class="info-text transport-companies">
+            <li>Меловые линии</li>
+
+            <li>СДИК</li>
+
+            <li>ТоксБерри</li>
+          </ul>
+
+          <a class="info-about-button button-appearance button-font link" href="#">ПОДРОБНЕЕ О НА<span class="letter-spacing-reset">С</span></a>
+
+        </section>
+
+        <section class="info-contacts">
+
+          <h2 class="info-main-title big-title">Контакты</h2>
+
+          <p class="info-text">
+            Вы можете забрать товар сами, заехав в наш офис.<br>
+            Заодно сможете проверить работоспособность покупки.
+          </p>
+
+          <address class="info-text contacts-address">
+            <span class="info-text-title">Интернет-магазин «Девайс»</span><br>
+
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+
+            <a class="link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+
+          <h3 class="info-text-title">Время работы</h3>
+
+          <p class="info-text">
+            пн—пт: с 10:00 до 22:00<br>
+            сб—вс: с 10:00 до 19:00
+          </p>
+
+          <a class="info-contacts-button button-appearance button-font link" href="mailto:mail@htmlacademy.ru">НАПИШИТЕ НА<span class="letter-spacing-reset">М</span></a>
+        </section>
+      </div>
+
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подписка на еженедельный дайджест</h2>
+
+        <div class="subscribe-block">
+          <strong class="subscribe-call big-title">Подпишитесь на рассылку</strong>
+
+          <p class="subscribe-text">
+            Еженедельный дайджест с обзорами новинок,<br>
+            длительными тест-драйвами, распаковками,
+            а также акции, спецпредложения и вот это вот всё.
+          </p>
+
+          <form class="subscribe-email-send" action="https://echo.htmlacademy.ru/" method="post">
+
+            <label class="subscribe-label">
+              <span class="visually-hidden">Ваш e-mail</span>
+              <input class="subscribe-email font-rubik" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+            </label>
+
+            <button class="button focus-outline subscribe-btn button-font button-light" type="submit">
+              ПОДПИСАТЬС<span class="letter-spacing-reset">Я</span>
+            </button>
+
+          </form>
+
+          <p class="subscribe-disclaimer">
+            Это бесплатно
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-container">
+        <a class="logo-footer link" href="index.html">
+          <img class="" src="images/icons/logo-footer.svg" width="145" height="36" alt="Логотип «device».">
+        </a>
+
+        <section class="footer-address">
+          <h2 class="visually-hidden">Адрес нашего интернет-магазина</h2>
+
+          <p class="footer-address-text small-text">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </p>
+        </section>
+
+        <section class="footer-navigation">
+          <h2 class="visually-hidden">Навигация пользователя</h2>
+
+          <ul class="footer-menu">
+
+            <li class="footer-menu-item">
+              <a class="footer-menu-link button-font link" href="#">ДОСТАВК<span class="letter-spacing-reset">А</span></a>
+            </li>
+
+            <li class="footer-menu-item">
+              <a class="footer-menu-link button-font link" href="#">ГАРАНТИ<span class="letter-spacing-reset">Я</span></a>
+            </li>
+
+            <li class="footer-menu-item">
+              <a class="footer-menu-link button-font link" href="#">КОНТАКТ<span class="letter-spacing-reset">Ы</span></a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-social-list">
+
+            <li class="footer-social-item">
+              <a class="footer-social-link icon-telegram link" href="#" title="Телеграм">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+
+            <li class="footer-social-item">
+              <a class="footer-social-link icon-youtube link" href="#" title="Ютуб">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+
+            <li class="footer-social-item">
+              <a class="footer-social-link icon-x link" href="#" title="Икс">
+                <span class="visually-hidden">Икс</span>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+
+          <a class="footer-contacts-number small-text link"  href="tel:+78128121212">
+            Тел.: +7 (812) 812-12-12
+          </a>
+
+          <a class="footer-academy-link link" href="https://htmlacademy.ru/" title="Перейти на сайт Академии">
+            <span class="visually-hidden">.html academy</span>
+
+            <svg class="footer-academy-logo" width="145" height="36" aria-hidden="true"  focusable="false" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
+              <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
+              <path d="M26.6 4.8H21.8V1.1H19.8V4.9H17.9V6.9H19.8V12.9C19.8 14.6 20.8 15.6 22.5 15.6H26.6V13.6H22.9C22.2 13.6 21.8 13.2 21.8 12.5V6.8H26.6V4.8Z"/>
+              <path d="M41.1 4.6C39.5 4.6 38.2 5.4 37.6 6.7H37.5C36.9 5.5 35.7 4.6 34.1 4.6C32.7 4.6 31.6 5.4 31 6.4H30.9V4.8H29V15.4H31V10C31 8 32 6.5 33.6 6.5C35.1 6.5 36 7.5 36 9.1V15.4H38V9.8C38 7.4 39.4 6.5 40.6 6.5C42.1 6.5 43 7.5 43 9.1V15.4H45V8.9C45.1 6.4 43.6 4.6 41.1 4.6Z"/>
+              <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9C50.2 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"/>
+              <path d="M28.9 19.7C28 18.6 26.7 17.9 25 17.9C21.9 17.9 19.6 20.2 19.6 23.5C19.6 26.8 21.9 29.1 25 29.1C26.8 29.1 28 28.3 28.8 27.2H28.9V28.8H30.9V18.2H28.9V19.7ZM25.3 27.1C23.1 27.1 21.7 25.5 21.7 23.5C21.7 21.5 23.1 19.9 25.3 19.9C27.5 19.9 28.9 21.5 28.9 23.5C28.9 25.4 27.5 27.1 25.3 27.1Z"/>
+              <path d="M44.2 22C43.7 19.6 41.6 17.9 38.8 17.9C35.4 17.9 33.2 20.4 33.2 23.5C33.2 26.6 35.4 29.1 38.8 29.1C41.6 29.1 43.7 27.3 44.2 24.9H42.1C41.7 26.2 40.4 27.2 38.8 27.2C36.6 27.2 35.2 25.6 35.2 23.6C35.2 21.6 36.6 20 38.8 20C40.4 20 41.6 21 42.1 22.2H44.2V22Z"/>
+              <path d="M55.1 19.7C54.2 18.6 52.9 17.9 51.2 17.9C48.1 17.9 45.8 20.2 45.8 23.5C45.8 26.8 48.1 29.1 51.2 29.1C53 29.1 54.2 28.3 55 27.2H55.1V28.8H57.1V18.2H55.1V19.7ZM51.5 27.1C49.3 27.1 47.9 25.5 47.9 23.5C47.9 21.5 49.3 19.9 51.5 19.9C53.7 19.9 55.1 21.5 55.1 23.5C55.1 25.4 53.6 27.1 51.5 27.1Z"/>
+              <path d="M68.7 19.8C67.8 18.7 66.5 17.9 64.8 17.9C61.7 17.9 59.4 20.2 59.4 23.5C59.4 26.8 61.6 29.1 64.8 29.1C66.5 29.1 67.8 28.3 68.6 27.3H68.7V28.8H70.7V13.4H68.7V19.8ZM65.1 27.1C62.9 27.1 61.5 25.5 61.5 23.5C61.5 21.5 62.9 19.9 65.1 19.9C67.3 19.9 68.7 21.5 68.7 23.5C68.6 25.5 67.2 27.1 65.1 27.1Z"/>
+              <path d="M78.3 17.9C75 17.9 72.8 20.4 72.8 23.5C72.8 26.5 74.9 29.1 78.3 29.1C80.8 29.1 82.8 27.8 83.5 25.5H81.4C80.9 26.5 79.8 27.1 78.4 27.1C76.5 27.1 75.1 25.8 75 24.2H83.8C84 20.6 81.8 17.9 78.3 17.9ZM78.3 19.8C80 19.8 81.3 20.8 81.6 22.4H75.1C75.4 20.9 76.6 19.8 78.3 19.8Z"/>
+              <path d="M98.2 17.9C96.6 17.9 95.3 18.7 94.6 19.9H94.5C93.9 18.7 92.7 17.9 91.1 17.9C89.7 17.9 88.6 18.6 88 19.7V18.2H86.1V28.8H88.1V23.4C88.1 21.4 89.1 20 90.7 19.9C92.2 19.9 93.1 20.9 93.1 22.5V28.8H95.1V23.2C95.1 20.8 96.5 19.9 97.7 19.9C99.2 19.9 100.1 20.9 100.1 22.5V28.8H102.1V22.3C102.2 19.7 100.7 17.9 98.2 17.9Z"/>
+              <path d="M109.4 27L105.8 18.1H103.6L108.4 29.7C108.1 30.6 107.7 30.9 106.7 30.9H104.2V32.9H106.7C108.5 32.9 109.5 32.1 110.2 30.3L114.9 18.1H112.8L109.4 27Z"/>
+            </svg>
+          </a>
+        </section>
+      </div>
+    </footer>
+
+    <div class="modal-container visually-hidden">
+      <div class="modal modal-delivery">
+        <h2 class="modal-title big-title">Доставка под заказ</h2>
+
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="modal-form-row modal-user-info">
+            <label class="modal-form-label modal-input-icon icon-name">
+              <span>Ваше имя:</span>
+
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="name" placeholder="Введите имя">
+            </label>
+
+            <label class="modal-form-label modal-input-icon icon-mail">
+              <span>Ваш e-mail:</span>
+
+              <input class="modal-form-input focus-outline font-rubik" type="email" name="email" placeholder="Введите e-mail">
+              <span class="modal-input-tip">Забавный у вас адрес</span>
+            </label>
+          </div>
+
+          <div class="modal-form-row modal-delivery-info">
+            <label class="modal-form-label">
+              <span>Что нужно привезти:</span>
+
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="something" placeholder="В свободной форме">
+            </label>
+
+            <div class="quantity-wrapper">
+              <label class="modal-form-label" for="quantity-input">
+                <span>Количество:</span>
+              </label>
+
+              <span class="modal-tooltip">
+                <button class="modal-tooltip-button focus-outline" aria-labelledby="tooltip-label-date" type="button">
+                  i
+                </button>
+                <span class="modal-tooltip-text small-text" role="tooltip" id="tooltip-label-date">
+                  Постараемся найти, сколько нужно.
+                  Привезём сколько получится
+                  по требованиям к провозу багажа
+                </span>
+              </span>
+
+
+              <div class="modal-quantity-field">
+                <button class="quantity-button focus-outline" type="button">
+                  <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H0V9H16V7Z"/>
+                  </svg>
+                </button>
+
+                <input class="modal-form-input modal-quantity focus-outline font-rubik" id="quantity-input" type="number" name="quantity" value="1" placeholder="" min="1">
+
+                <button class="quantity-button focus-outline" type="button">
+                  <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_11518_3294)">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_11518_3294">
+                    <rect width="16" height="16" fill="white"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button class="modal-send button focus-outline button-appearance button-box button-font" type="submit">
+            ОТПРАВИТ<span class="letter-spacing-reset">Ь</span>
+          </button>
+        </form>
+
+        <!-- Modal window -->
+        <button class="modal-close button focus-outline" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </div>
+  </body>
+
+</html>

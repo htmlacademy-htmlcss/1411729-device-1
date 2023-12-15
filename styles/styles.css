@@ -45,7 +45,7 @@ html {
           flex-direction: column;
 
   margin: 0;
-  min-width: 1200px;
+  min-width: 1440px;
   min-height: 100%;
 
   font-family: Rubik, sans-serif;
@@ -242,9 +242,19 @@ html {
   background: url("../images/icons/sort.svg") no-repeat;
 }
 
-.icon-cart::after {
-  content: '2';
+.icon-cart::before {
+  content: '';
 
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  background: url("../images/icons/cart.svg") no-repeat;
+}
+/* End */
+
+.product-cart-quantity {
   width: 21px;
   height: 21px;
   display: -webkit-box;
@@ -258,25 +268,13 @@ html {
           align-items: center;
 
   position: absolute;
-  left: -15px;
-  top: 0;
+  left: -14px;
+  top: 1px;
 
   font-size: 14px;
   background-color: #ffffff;
   border-radius: 50%;
 }
-
-.icon-cart::before {
-  content: '';
-
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  margin-right: 12px;
-
-  background: url("../images/icons/cart.svg") no-repeat;
-}
-/* End */
 
 .navigation-menu-item {
   margin-right: 47px;
@@ -1671,7 +1669,7 @@ html {
 .sticker-text {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 800;

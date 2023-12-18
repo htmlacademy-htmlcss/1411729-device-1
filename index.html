@@ -29,7 +29,7 @@
               <label class="product-search-label position-relative">
                 <span class="visually-hidden">Найти товар в каталоге</span>
               </label>
-              <input class="product-search-row small-text font-rubik" type="text" name="product-name" placeholder="Поиск по сайту">
+              <input class="product-search-row small-text font-rubik" type="text" name="product-name" placeholder="Поиск по сайту" required>
 
               <button class="button focus-outline product-search-btn small-text" type="submit">Найти</button>
             </form>
@@ -521,13 +521,13 @@
             <label class="modal-form-label modal-input-icon icon-name">
               <span>Ваше имя:</span>
 
-              <input class="modal-form-input focus-outline font-rubik" type="text" name="name" placeholder="Введите имя">
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="name" placeholder="Введите имя" required>
             </label>
 
             <label class="modal-form-label modal-input-icon icon-mail">
               <span>Ваш e-mail:</span>
 
-              <input class="modal-form-input focus-outline font-rubik" type="email" name="email" placeholder="Введите e-mail">
+              <input class="modal-form-input focus-outline font-rubik" type="email" name="email" placeholder="Введите e-mail" required>
               <span class="modal-input-tip">Забавный у вас адрес</span>
             </label>
           </div>
@@ -536,7 +536,7 @@
             <label class="modal-form-label">
               <span>Что нужно привезти:</span>
 
-              <input class="modal-form-input focus-outline font-rubik" type="text" name="something" placeholder="В свободной форме">
+              <input class="modal-form-input focus-outline font-rubik" type="text" name="something" placeholder="В свободной форме" required>
             </label>
 
             <div class="quantity-wrapper">
@@ -558,6 +558,7 @@
 
               <div class="modal-quantity-field">
                 <button class="quantity-button focus-outline" type="button">
+                  <span class="visually-hidden">Уменьшить на один.</span >
                   <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H0V9H16V7Z"/>
                   </svg>
@@ -566,6 +567,7 @@
                 <input class="modal-form-input modal-quantity focus-outline font-rubik" id="quantity-input" type="number" name="quantity" value="1" placeholder="" min="1">
 
                 <button class="quantity-button focus-outline" type="button">
+                  <span class="visually-hidden">Добавить один.</span >
                   <svg class="quantity-sign" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_11518_3294)">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>

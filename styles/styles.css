@@ -1166,7 +1166,7 @@ html {
   opacity: 0.5;
 }
 
-.subscribe-email:focus:invalid {
+.subscribe-email:not(:placeholder-shown):invalid {
   border-bottom: 3px solid #ff3d3d;
 }
 
@@ -2499,7 +2499,7 @@ html {
   background-color: #f0f0f0;
 }
 
-.modal-form-input:invalid {
+.modal-form-input:not(:placeholder-shown):invalid {
   border: 2px solid #ff3d3d;
 }
 

@@ -454,6 +454,16 @@ html {
   text-align: center;
 }
 
+.button-box {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 15px 50px;
+
+  border: none;
+  font-size: inherit;
+}
+
 .navigation-menu-link {
   font-family: Raleway, sans-serif;
   letter-spacing: 3.6px;
@@ -793,13 +803,14 @@ html {
   border-style: none;
   border-right-style: solid;
   border-width: 7px;
-  overflow: hidden;
+}
+
+.services-name-wrapper {
+  width: 161px;
+  display: block;
 }
 
 .services-name {
-  width: 161px;
-  position: relative;
-
   margin-bottom: 35px;
   padding: 10px 0;
   line-height: 20px;
@@ -808,65 +819,39 @@ html {
 }
 
 .services-name::before {
-  content: "";
-  width: 100%;
-  height: 8px;
-
-  position: absolute;
   left: 0;
   top: 0.9em;
-  z-index: -5;
-
-  background-color: #ffe17f;
 }
 
-.services-name:hover::before {
-  height: 100%;
-  top: 0;
-}
+.services-checked {
+  width: 100%;
 
-.services-name:active::before {
-  background-color: #ffcc33;
-}
-
-.services-menu-item:checked + .services-name {
   color: #ffe17f;
   background-color: #000000;
+  outline-offset: 2px;
 }
 
-.services-menu-item:checked + .services-name:hover,
-.services-menu-item:checked + .services-name:active {
+.services-checked:hover,
+.services-checked:active {
   padding-left: 27px;
 }
 
-.services-menu-item:checked + .services-name::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  z-index: -5;
-
-  background-color: #000000;
-}
-
-.services-menu-item:focus + .services-name {
-  outline: 2px solid #af4fff;
-  outline-offset: 1px;
+.services-checked::before {
+  display: none;
 }
 
 .services-description {
-  width: 758px;
+  width: 757px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 73px;
-  padding-right: 220px;
 
   position: relative;
 }
 
-.services-description-name {
+.services-description-title {
+  width: 455px;
+
   margin-top: 0;
   margin-bottom: 34px;
 }
@@ -881,7 +866,7 @@ html {
 .services-description::after {
   position: absolute;
   top: 62px;
-  right: 46px;
+  right: 45px;
 
   content: "";
 
@@ -1496,16 +1481,6 @@ html {
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-.button-box {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 15px 50px;
-
-  border: none;
-  font-size: inherit;
 }
 
 /* Color checkbox */
